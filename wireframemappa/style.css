@@ -4,7 +4,7 @@ body {
 }
 
 header {
-    background-color: #370617;
+    background-color: #f72585;
     color: white;
     padding: 1rem;
     display: flex;
@@ -38,7 +38,7 @@ form input[type="submit"] {
 }
 
 .box {
-    background-color: #f48c06;
+    background-color: #b5179e;
     padding: 1rem;
     margin-bottom: 1rem;
 }
@@ -48,14 +48,14 @@ form input[type="submit"] {
 }
 
 .banner {
-    background-color: #d00000;
+    background-color: #7209b7;
     color: white;
     padding: 1rem;
     margin-bottom: 1rem;
 }
 
 footer {
-    background-color: #370617;
+    background-color: #f72585;
     color: white;
     padding: 1rem;
     text-align: center;
@@ -101,7 +101,7 @@ footer {
 }
 .google-maps {
     position: relative;
-    padding-bottom: 75%; /* Definisco l'aspect ratio */
+    padding-bottom: 75%;
     height: 0;
     overflow: hidden;
   }
@@ -112,3 +112,8 @@ footer {
     width: 100% !important;
     height: 100% !important;
   }
+
+
+#remove{
+    background-color: white;
+}
