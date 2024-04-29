@@ -43,10 +43,6 @@ form input[type="submit"] {
     margin-bottom: 1rem;
 }
 
-.news {
-    display: flex;
-}
-
 .banner {
     background-color: #7209b7;
     color: white;
