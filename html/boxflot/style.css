@@ -1,0 +1,25 @@
+body {
+    margin: auto;
+}
+
+.container {
+    background-color: #ccc9dc;
+    height: 20rem;
+    padding: 2rem;
+    width: 50%;
+    margin: auto;
+}
+
+.box {
+    height: 6rem;
+    border: 1px dashed #000000;
+    width: 20rem;
+}
+
+#box_secondo {
+    background-color: #324a5f;
+    margin-top: 5rem;
+    margin-left: 22.5rem;
+    height: 5rem;
+    border: 1px dotted #000000;
+}
