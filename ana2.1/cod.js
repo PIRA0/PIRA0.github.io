@@ -11,11 +11,11 @@ function addRiga() {
     let conta = 0;
     var dati = [];
     
-    // Raccogliamo i dati dai campi di input
+
     for (let i = 0; i < nColonne; i++) {
         let campo = document.getElementById(arrayId[i]);
         if (campo && campo.value !== "") { 
-            dati.push(campo.value);  // Aggiungiamo il valore al vettore
+            dati.push(campo.value);
             conta++;
         }
     }
@@ -24,7 +24,7 @@ function addRiga() {
         return;
     }
 
-    // Validazioni
+
     if (!nomeRegex.test(dati[0])) {
         alert("Il nome non è valido.");
         return;
@@ -50,9 +50,9 @@ function addRiga() {
         return;
     }
 
-    // Salviamo i dati nel localStorage come stringa separata da virgole
+
     localStorage.setItem('datiUtente', dati.join(','));
 
-    // Reindirizziamo alla pagina di destinazione
+
     window.location.href = './pag.html';
 }
