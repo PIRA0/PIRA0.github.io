@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carica e Visualizza CSV</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
-    <script src="cod.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<script src="cod.js" defer></script>
+<title>GraficoFileReader</title>
 </head>
 <body>
-    <h1>Carica un file CSV</h1>
-    <input type="file" id="csvFile" accept=".csv" onchange="apri(this)">
-    <div id="contenuto"></div>
-    <div id="grafico"></div>
+    <div id="corpo">
+        <h1>File Reader</h1>
+        <input type="file" id="file-input" onchange="apri(this)"/>
+        <div id="container"></div>
+        <canvas id="myCanvas" width="800" height="300"></canvas>
+    </div>
 </body>
 </html>

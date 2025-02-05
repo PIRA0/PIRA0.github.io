@@ -2,23 +2,28 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
     padding: 20px;
-    background-color: #f4f4f9;
+    background-color: #89b63b;
 }
 
+
+
 h1 {
-    color: #333;
+    color: #ffffff;
+    margin:auto;
+    width: fit-content;
 }
 
 input{
-    margin-bottom: 20px;
+    margin-left: 45%;
+    width: fit-content;
 }
 
 table {
     margin:auto;
     width: 50%;
     border-collapse: collapse;
-    margin-top: 20px;
-    border: 1px solid black; 
+    margin-top: 30px;
+    border: 1px solid rgb(255, 255, 255); 
 }
 
 th, td {
@@ -28,10 +33,19 @@ th, td {
 }
 
 th {
-    background-color: #4cc9f0;
+    background-color: #fdf0d5;
 }
 
 tr:nth-child(odd) {
-    background-color: #fdc500;
+    background-color: #ff9505;
+}
+
+tr:nth-child(even) {
+    background-color: #ffc971;
+}
+
+#myCanvas{
+    margin-left:27%;
+    margin-top: 5rem;
 }
 
