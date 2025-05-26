@@ -1,0 +1,8 @@
+img{
+    height:200px;
+}
+div#prodotto{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+}
