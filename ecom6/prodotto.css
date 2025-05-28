@@ -24,33 +24,47 @@ header nav a:hover {
     text-decoration: underline;
 }
 
-
 #elementi {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    display: flex;
     gap: 20px;
     padding: 20px;
-}
-
-#prodotto {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    text-align: center;
-}
-
-#prodotto img {
+    justify-content: center;
     width: 100%;
+}
+
+#imgpr {
+    width: 40vw;
     height: auto;
     object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-#titolo {
-    font-size: 18px;
+#testi {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    height: 100%;
+    width: 40vw;
+}
+
+#tit {
+    font-size: 24px;
     font-weight: bold;
-    margin-top: 10px;
-    cursor: pointer;
+    margin: 0;
+}
+
+#descr {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+#pr {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f90;
 }
 
 #atc {
@@ -60,38 +74,12 @@ header nav a:hover {
     padding: 10px;
     font-size: 16px;
     cursor: pointer;
-}
-
-#product-details {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-
-.product-info {
-    background-color: white;
-    padding: 20px;
     border-radius: 8px;
-    width: 400px;
+    width: 100%;
     text-align: center;
+    margin-top: auto;
 }
 
-#close-details {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    color: #333;
-}
-
-.hidden {
-    display: none;
+#atc:hover {
+    background-color: #ff8c00;
 }
