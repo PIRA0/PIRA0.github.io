@@ -1,110 +1,330 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>REST API Project</title>
 
-    <title>HomePir</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    body{
+      background:#09090b;
+      color:#f4f4f5;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    .glass{
+      background: rgba(24,24,27,0.7);
+      backdrop-filter: blur(10px);
+      border:1px solid rgba(255,255,255,0.08);
+    }
+
+    .card-hover{
+      transition:0.3s ease;
+    }
+
+    .card-hover:hover{
+      transform: translateY(-4px);
+      border-color:#3b82f6;
+    }
+
+    .gradient{
+      background: linear-gradient(135deg,#2563eb,#7c3aed);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+  </style>
 </head>
+
 <body>
 
-    <header><span id="titolo">Lista esercizi</span></header>
 
-    <div class="contenitore">
-        <div id="es">
-            <h1>Esercizio 1</h1>
-            <p> Gallery fiori</p>
-            <span id="bottone"><a href="gallery/gallery.html">vai alla pagina</a></span>
-            <a href>  </a>
-        </div><br>
-        <div id="es">
-            <h1>Esercizio 2</h1>
-            <p> Ricetta</p>
-            <span id="bottone"><a href="ricetta/ricetta.html">vai alla pagina</a></span>
-        </div><br>
+<section class="min-h-screen flex items-center justify-center px-6">
+  <div class="max-w-6xl w-full">
 
-        <div id="es">
-            <h1>Esercizio 3</h1>
-            <p> Tabella</p>
-            <span id="bottone"><a href="tabella/tab.html">vai alla pagina</a></span>
-        </div><br>
+    <div class="glass rounded-3xl p-10">
 
-        <div id="es">
-            <h1>Esercizio 4</h1>
-            <p> Wireframe</p>
-            <span id="bottone"><a href="wireframe/wire.html">vai alla pagina</a></span>
-        </div><br>
+      <div class="flex items-center gap-4 mb-6">
+        <div class="bg-blue-600 p-4 rounded-2xl">
+          <i data-lucide="server"></i>
+        </div>
 
-        <div id="es">
-            <h1>Esercizio 5</h1>
-            <p> Wireframe 2</p>
-            <span id="bottone"><a href="wireframe2/wire2.html">vai alla pagina</a></span>
-        </div><br>
+        <div>
+          <h1 class="text-5xl font-black gradient">
+            REST API Research Project
+          </h1>
 
-        <div id="es">
-            <h1>Esercizio 6</h1>
-            <p> Wireframe mappa</p>
-            <span id="bottone"><a href="wireframemappa/wiremap.html">vai alla pagina</a></span>
-        </div><br>
+          <p class="text-zinc-400 mt-2">
+            Evoluzione delle architetture API e dashboard videogiochi
+          </p>
+        </div>
+      </div>
 
-        <div id="es">
-            <h1>Esercizio 7</h1>
-            <p> Box flottanti</p>
-            <span id="bottone"><a href="boxflot/box.html">vai alla pagina</a></span>
-        </div><br>
+      <div class="mt-10 text-zinc-300 leading-8 text-lg">
+        Le API moderne sono il risultato di una lunga evoluzione tecnologica che ha trasformato il modo in cui i sistemi comunicano tra loro.
+        In origine, le applicazioni utilizzavano RPC (Remote Procedure Call), un approccio diretto ma fortemente dipendente dall’implementazione.
+        Successivamente SOAP introdusse uno standard più rigoroso basato su XML, garantendo interoperabilità ma al costo di maggiore complessità e pesantezza.
+        <br><br>
 
-        <div id="es">
-            <h1>Esercizio 8</h1>
-            <p> NavBar</p>
-            <span id="bottone"><a href="wireframenavbar/navbar.html">vai alla pagina</a></span>   
-        </div><br>
+        Con l’aumento delle applicazioni web e mobile, è emersa la necessità di un approccio più leggero e scalabile. REST (Representational State Transfer)
+        ha risposto perfettamente a questa esigenza, sfruttando HTTP, JSON e un’architettura stateless. Questo ha permesso una separazione netta tra client e server,
+        facilitando lo sviluppo di API pubbliche, microservizi e sistemi cloud-native.
+        <br><br>
 
-        <div id="es">
-            <h1>Esercizio 9</h1>
-            <p> wireframe completo</p>
-            <span id="bottone"><a href="wirecomp/wirecompl.html">vai alla pagina</a></span>
-        </div><br>
+        Oggi REST domina il panorama grazie alla sua semplicità, velocità e compatibilità universale con browser, app mobile e sistemi distribuiti.
+      </div>
 
-        <div id="es">
-            <h1>Esercizio 10</h1>
-            <p> Sprite </p>
-            <span id="bottone"><a href="sprite/sprite.html">vai alla pagina</a></span>
-        </div><br>
-
-        <div id="es">
-            <h1>Esercizio 11</h1>
-            <p> Anagrafica 2.0</p>
-            <span id="bottone"><a href="ana2/ana2.html">vai alla pagina</a></span>   
-        </div><br>
-
-        <div id="es">
-            <h1>Esercizio 12</h1>
-            <p> Anagrafica 2.1</p>
-            <span id="bottone"><a href="ana2.1/ana21.html">vai alla pagina</a></span>   
-        </div><br>
-
-        <div id="es">
-            <h1>Esercizio 13</h1>
-            <p> Tabella migranti</p>
-            <span id="bottone"><a href="tab/tab.html">vai alla pagina</a></span>   
-        </div><br>
-
-        <div id="es">
-            <h1>Esercizio 14</h1>
-            <p> Tabella 2.0</p>
-            <span id="bottone"><a href="tab2.0/tab.html">vai alla pagina</a></span>   
-        </div><br>
-
-        <div id="es">
-            <h1>Esercizio 15</h1>
-            <p>Sito e-commerce</p>
-            <span id="bottone"><a href="ecom6/login.html">vai alla pagina</a></span>   
-        </div><br>
-        
     </div>
-    <footer> TPS progetti Piraneo 3-4CI</footer>
+
+  </div>
+</section>
+
+
+<section class="px-6 py-20">
+  <div class="max-w-6xl mx-auto">
+
+    <div class="flex items-center gap-4 mb-10">
+      <i data-lucide="monitor"></i>
+      <h2 class="text-4xl font-black">Dashboard Videogiochi</h2>
+    </div>
+
+    <div class="glass rounded-3xl p-8">
+
+      <!-- SEARCH BAR -->
+      <div class="flex flex-col lg:flex-row gap-4 mb-10">
+
+        <div class="relative w-full">
+          <i data-lucide="search"
+             class="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-500"></i>
+
+          <input
+            id="searchInput"
+            type="text"
+            placeholder="Cerca giochi, es: GTA, FIFA, Elden Ring..."
+            class="w-full bg-zinc-900 border border-zinc-800 rounded-xl py-4 pl-12 pr-4 text-lg focus:border-blue-500 outline-none"
+          />
+        </div>
+
+        <button
+          onclick="searchGames()"
+          class="bg-blue-600 hover:bg-blue-500 px-8 py-4 rounded-xl font-bold flex items-center gap-2"
+        >
+          <i data-lucide="search"></i>
+          Cerca
+        </button>
+
+      </div>
+
+      <div id="loading" class="hidden text-zinc-400 mb-6">
+        Caricamento...
+      </div>
+
+      <div id="errorBox"
+           class="hidden bg-red-500/10 border border-red-500 p-4 rounded-xl text-red-300 mb-6"></div>
+
+      <div id="gamesContainer"
+           class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+    </div>
+  </div>
+</section>
+
+<section class="px-6 py-20">
+  <div class="max-w-6xl mx-auto">
+
+    <div class="flex items-center gap-4 mb-10">
+      <i data-lucide="file-code"></i>
+      <h2 class="text-4xl font-black">Documentazione Tecnica REST API</h2>
+    </div>
+
+    <div class="glass rounded-3xl p-8 space-y-10 text-zinc-300 leading-7">
+
+      <!-- ENDPOINT -->
+      <div>
+        <h3 class="text-2xl font-bold mb-4 text-blue-400">Endpoint utilizzati</h3>
+
+        <p class="mb-4">
+          L’applicazione utilizza la API pubblica RAWG per ottenere dati sui videogiochi.
+          Tutti gli endpoint rispettano le best practice REST:
+        </p>
+
+        <div class="bg-zinc-900 p-5 rounded-xl border border-zinc-800 font-mono text-sm">
+GET /games?key=API_KEY&page_size=9<br>
+GET /games?search={query}&key=API_KEY<br>
+GET /games/{id}
+        </div>
+
+        <p class="mt-4 text-zinc-400">
+          Gli endpoint sono basati su risorse nominali (games) e non su verbi, seguendo il paradigma REST.
+        </p>
+      </div>
+
+      <!-- JSON -->
+      <div>
+        <h3 class="text-2xl font-bold mb-4 text-purple-400">Metodi e Payload JSON</h3>
+
+        <p class="mb-4">
+          Le risposte della API sono in formato JSON e vengono gestite lato client tramite JavaScript.
+        </p>
+
+        <div class="bg-zinc-900 p-5 rounded-xl border border-zinc-800 font-mono text-sm overflow-x-auto">
+
+{
+  "id": 3498,
+  "name": "Grand Theft Auto V",
+  "released": "2013-09-17",
+  "rating": 4.5,
+  "genres": [
+    { "name": "Action" },
+    { "name": "Adventure" }
+  ]
+}
+
+        </div>
+
+        <p class="mt-4 text-zinc-400">
+          Il client estrae dinamicamente nome, rating, data di uscita e generi per costruire le card.
+        </p>
+      </div>
+
+
+      <div>
+        <h3 class="text-2xl font-bold mb-4 text-red-400">Gestione errori</h3>
+
+        <div class="grid md:grid-cols-3 gap-4">
+
+          <div class="bg-zinc-900 p-5 rounded-xl border border-zinc-800">
+            <h4 class="font-bold text-red-400">404 Not Found</h4>
+            <p class="text-sm text-zinc-400 mt-2">
+              La risorsa richiesta non esiste o la query non produce risultati.
+            </p>
+          </div>
+
+          <div class="bg-zinc-900 p-5 rounded-xl border border-zinc-800">
+            <h4 class="font-bold text-yellow-400">401 Unauthorized</h4>
+            <p class="text-sm text-zinc-400 mt-2">
+              API key mancante o non valida.
+            </p>
+          </div>
+
+          <div class="bg-zinc-900 p-5 rounded-xl border border-zinc-800">
+            <h4 class="font-bold text-blue-400">500 Server Error</h4>
+            <p class="text-sm text-zinc-400 mt-2">
+              Errore interno del servizio RAWG o problema di rete.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div>
+        <h3 class="text-2xl font-bold mb-4 text-green-400">Conclusione</h3>
+
+        <p>
+          Il progetto dimostra l’utilizzo pratico delle API REST in un contesto reale,
+          evidenziando la gestione delle richieste HTTP, la manipolazione dei dati JSON
+          e la creazione di un’interfaccia dinamica e responsive.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<script>
+
+const API_KEY = "43e9215ee78749ce8ae505aeede1afb2";
+const BASE_URL = "https://api.rawg.io/api/games";
+
+async function loadGames(){
+  fetchGames(`${BASE_URL}?key=${API_KEY}&page_size=9`);
+}
+
+async function searchGames(){
+
+  const value = document.getElementById("searchInput").value.trim();
+
+  if(value === ""){
+    loadGames();
+    return;
+  }
+
+  fetchGames(`${BASE_URL}?key=${API_KEY}&search=${value}&page_size=9`);
+}
+
+async function fetchGames(url){
+
+  const container = document.getElementById("gamesContainer");
+  const loading = document.getElementById("loading");
+  const errorBox = document.getElementById("errorBox");
+
+  container.innerHTML = "";
+  loading.classList.remove("hidden");
+  errorBox.classList.add("hidden");
+
+  try{
+
+    const res = await fetch(url);
+    if(!res.ok) throw new Error("Errore API");
+
+    const data = await res.json();
+
+    loading.classList.add("hidden");
+
+    data.results.forEach(game => {
+
+      const div = document.createElement("div");
+      div.className = "glass rounded-2xl overflow-hidden card-hover";
+
+      div.innerHTML = `
+        <img src="${game.background_image}" class="h-52 w-full object-cover"/>
+
+        <div class="p-6">
+
+          <div class="flex justify-between mb-3">
+            <h3 class="text-xl font-bold">${game.name}</h3>
+            <span class="bg-blue-600 px-3 py-1 rounded-full text-sm">⭐ ${game.rating}</span>
+          </div>
+
+          <p class="text-zinc-400 mb-3">Release: ${game.released || "N/D"}</p>
+
+          <div class="flex flex-wrap gap-2">
+            ${game.genres.map(g =>
+              `<span class="bg-zinc-800 px-3 py-1 rounded-lg text-sm">${g.name}</span>`
+            ).join("")}
+          </div>
+
+        </div>
+      `;
+
+      container.appendChild(div);
+
+    });
+
+    lucide.createIcons();
+
+  } catch(err){
+
+    loading.classList.add("hidden");
+    errorBox.classList.remove("hidden");
+    errorBox.innerHTML = "Errore: " + err.message;
+
+  }
+}
+
+document.getElementById("searchInput")
+  .addEventListener("keypress", e => {
+    if(e.key === "Enter") searchGames();
+  });
+
+loadGames();
+lucide.createIcons();
+
+</script>
 
 </body>
 </html>
